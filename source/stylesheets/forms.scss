@@ -4,6 +4,7 @@ form {
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: $large-screen;
 
   input {
     flex: 3;
@@ -18,7 +19,7 @@ form {
     }
   }
 
-  button {
+  input.button {
     flex: 1;
     padding: $small-spacing;
     background-color: $primary-color;
