@@ -1,35 +1,24 @@
 /*
-Error: Undefined variable: "$small-spacing".
-        on line 10 of /Users/nolantait/openguilds.github.io/source/stylesheets/forms.scss
+Error: Undefined variable: "$large-screen".
+        on line 7 of /Users/nolantait/openguilds.github.io/source/stylesheets/forms.scss
 
+2:   display: flex;
+3:   flex-flow: row nowrap;
+4:   align-items: center;
 5:   justify-content: center;
 6:   width: 100%;
-7: 
-8:   input {
-9:     flex: 3;
-10:     padding: $small-spacing;
-11:     border-radius: $base-border-radius 0 0 $base-border-radius;
-12:     box-shadow: none;
-13:     border: 1px inset $primary-color;
-14:     margin-right: -1px;
-15: 
+7:   max-width: $large-screen;
+8: 
+9:   input {
+10:     flex: 3;
+11:     padding: $small-spacing;
+12:     border-radius: $base-border-radius 0 0 $base-border-radius;
 
 Backtrace:
-/Users/nolantait/openguilds.github.io/source/stylesheets/forms.scss:10
+/Users/nolantait/openguilds.github.io/source/stylesheets/forms.scss:7
 /Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
 /Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-/Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
-/Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
-/Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
-/Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
 /Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /Users/nolantait/.asdf/installs/ruby/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
@@ -165,4 +154,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$small-spacing\".\A         on line 10 of /Users/nolantait/openguilds.github.io/source/stylesheets/forms.scss\A \A 5:   justify-content: center;\A 6:   width: 100%;\A 7: \A 8:   input {\A 9:     flex: 3;\A 10:     padding: $small-spacing;\A 11:     border-radius: $base-border-radius 0 0 $base-border-radius;\A 12:     box-shadow: none;\A 13:     border: 1px inset $primary-color;\A 14:     margin-right: -1px;\A 15: "; }
+  content: "Error: Undefined variable: \"$large-screen\".\A         on line 7 of /Users/nolantait/openguilds.github.io/source/stylesheets/forms.scss\A \A 2:   display: flex;\A 3:   flex-flow: row nowrap;\A 4:   align-items: center;\A 5:   justify-content: center;\A 6:   width: 100%;\A 7:   max-width: $large-screen;\A 8: \A 9:   input {\A 10:     flex: 3;\A 11:     padding: $small-spacing;\A 12:     border-radius: $base-border-radius 0 0 $base-border-radius;"; }
