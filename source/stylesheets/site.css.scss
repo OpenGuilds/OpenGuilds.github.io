@@ -1,0 +1,73 @@
+@import 'variables';
+@import 'typography';
+@import 'forms';
+
+body {
+  background-color: $background-color;
+  color: $base-font-color;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+nav.navigation {
+  background-color: $primary-color;
+  color: white;
+  display: block;
+  max-height: $navigation-height;
+  padding: $small-spacing;
+
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      margin-right: $small-spacing;
+    }
+
+    li.logo {
+      margin-left: $small-spacing;
+      margin-right: auto;
+      font-weight: bold;
+    }
+  }
+}
+
+section.main {
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+section.header {
+  height: 75vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section.signup {
+  width: 100%;
+  margin: $base-spacing;
+}
+
+section.flexible-organizations,
+section.guild-creation,
+section.layers,
+section.work,
+section.rewards,
+section.unscalable,
+section.internet-of-people {
+  margin: 15vh 0;
+}
