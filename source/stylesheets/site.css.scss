@@ -13,8 +13,9 @@ body {
 }
 
 nav.navigation {
-  background-color: $primary-color;
-  color: white;
+  border-bottom: 2px solid $primary-color;
+  border-color: $primary-color;
+  color: $primary-color;
   display: block;
   max-height: $navigation-height;
   padding: $small-spacing;
@@ -33,9 +34,22 @@ nav.navigation {
     }
 
     li.logo {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: flex-start;
       margin-left: $small-spacing;
       margin-right: auto;
       font-weight: 500;
+      font-size: 2em;
+
+      img {
+        height: 48px;
+        max-height: $navigation-height;
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
     }
   }
 }
