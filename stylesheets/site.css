@@ -1,22 +1,46 @@
+@font-face {
+  font-family: 'TTCommons';
+  src: url("../fonts/TT-Commons-Medium.otf");
+  src: url("../fonts/TT-Commons-Medium.ttf") format("truetype"), url("../fonts/TT-Commons-Medium.otf") format("otf");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'TTCommons';
+  src: url("../fonts/TT-Commons-Light.otf");
+  src: url("../fonts/TT-Commons-Light.ttf") format("truetype"), url("../fonts/TT-Commons-Light.otf") format("otf");
+  font-weight: 200;
+  font-style: normal; }
 h1, h2, h3, h4, h5 {
   margin-bottom: 1em;
   color: #673ab7; }
 
 h1 {
-  font-size: 2.75em; }
+  font-size: 2.75em;
+  font-weight: 500; }
 
 h2 {
-  font-size: 2.3em; }
+  font-size: 2.3em;
+  font-weight: 500; }
 
 h3 {
-  font-size: 1.75em; }
+  font-size: 1.75em;
+  font-weight: 500; }
 
 p {
   line-height: 1.75;
-  color: #616161; }
+  font-size: 1.25em;
+  color: #616161;
+  margin-bottom: 1em;
+  margin-top: 0;
+  font-weight: 200; }
 
 strong {
-  color: #878787; }
+  color: #311b56;
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-bottom: 1em;
+  display: block;
+  line-height: 1.75; }
 
 form {
   display: -webkit-box;
@@ -62,7 +86,7 @@ form {
 body {
   background-color: #fdfdfd;
   color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-family: "TTCommons", -apple-system, sans-serif;
   margin: 0;
   padding: 0;
   max-width: 100%;
@@ -96,7 +120,7 @@ nav.navigation {
     nav.navigation ul li.logo {
       margin-left: 1em;
       margin-right: auto;
-      font-weight: bold; }
+      font-weight: 500; }
 
 section.main {
   max-width: 700px;
@@ -117,10 +141,12 @@ section.header {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin: 0 1em; }
+  section.header section.signup {
+    width: 100%; }
 
 section.signup {
-  width: 100%;
   margin: 2em; }
 
 section.flexible-organizations,
@@ -130,4 +156,10 @@ section.work,
 section.rewards,
 section.unscalable,
 section.internet-of-people {
-  margin: 15vh 0; }
+  margin: 15vh 1em; }
+
+footer {
+  margin-top: 6em;
+  height: 25vh;
+  background-color: #512e90;
+  width: 100%; }
