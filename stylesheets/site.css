@@ -142,6 +142,12 @@ nav.navigation {
         width: auto;
         margin-right: 0;
         margin-bottom: 5px; }
+      @media screen and (max-width: 700px) {
+        nav.navigation ul li.logo {
+          margin-left: 0;
+          font-size: 1.25em; }
+          nav.navigation ul li.logo img {
+            height: 36px; } }
 
 section.main {
   max-width: 700px;
