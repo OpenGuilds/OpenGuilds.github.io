@@ -1,3 +1,24 @@
+$font-path: '../fonts/' !default;
+
+@font-face {
+   font-family: 'TTCommons';
+      src: url('#{$font-path}TT-Commons-Medium.otf');
+      src: url('#{$font-path}TT-Commons-Medium.ttf') format('truetype'),
+           url('#{$font-path}TT-Commons-Medium.otf') format('otf');
+   font-weight: 500;
+   font-style: normal;
+}
+
+
+@font-face {
+   font-family: 'TTCommons';
+      src: url('#{$font-path}TT-Commons-Light.otf');
+      src: url('#{$font-path}TT-Commons-Light.ttf') format('truetype'),
+           url('#{$font-path}TT-Commons-Light.otf') format('otf');
+   font-weight: 200;
+   font-style: normal;
+}
+
 h1, h2, h3, h4, h5 {
   margin-bottom: $small-spacing;
   color: $primary-color;
@@ -5,21 +26,33 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 2.75em;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 2.3em;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 1.75em;
+  font-weight: 500;
 }
 
 p {
   line-height: 1.75;
+  font-size: 1.25em;
   color: lighten($base-font-color, 18);
+  margin-bottom: $small-spacing;
+  margin-top: 0;
+  font-weight: 200;
 }
 
 strong {
-  color: lighten($base-font-color, 33);
+  color: darken($primary-color, 25%);
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-bottom: $small-spacing;
+  display: block;
+  line-height: 1.75;
 }
