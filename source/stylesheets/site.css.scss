@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: $primary-color;
+}
+
 nav.navigation {
   border-bottom: 2px solid $primary-color;
   border-color: $primary-color;
