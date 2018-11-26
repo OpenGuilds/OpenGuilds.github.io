@@ -195,8 +195,8 @@ section.segment {
       width: 128px;
       margin: 0 auto; }
   section.segment section.copy {
-    padding: 0 2em;
-    width: 100%; }
+    padding: 0 1em;
+    max-width: 100%; }
     section.segment section.copy h2 {
       text-align: center;
       margin-top: 1em; }
