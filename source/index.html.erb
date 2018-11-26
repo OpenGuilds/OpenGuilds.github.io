@@ -11,7 +11,7 @@ title: Open Guilds
 </nav>
 
 <section class="main">
-  <section class="segment" id="hero">
+  <section id="hero">
     <section class="copy">
       <h1>
       Create digital on-demand
@@ -21,12 +21,13 @@ title: Open Guilds
 
       <p>
       OpenGuilds helps you build and manage online organizations that perform work
-      online for rewards you set.
+      for rewards you set.
       </p>
     </section>
 
     <section class="links">
-      <%= link_to 'Sign Up', '#', class: 'primary-button' %>
+      <%= link_to 'Sign Up', 'https://dashboard.openguilds.com/users/sign_up/', class: 'primary-button' %>
+      <%= link_to 'Sign In', 'https://dashboard.openguilds.com/users/sign_in/', class: 'secondary-button' %>
     </section>
   </section>
 
@@ -36,9 +37,9 @@ title: Open Guilds
     </figure>
 
     <section class="copy">
-      <h1>
+      <h2>
       Build a community
-      </h1>
+      </h2>
 
       <p>
       Guilds have different tasks and levels of responsibility.
@@ -61,9 +62,9 @@ title: Open Guilds
     </figure>
 
     <section class="copy">
-      <h1>
+      <h2>
       Send work in
-      </h1>
+      </h2>
 
       <p>
       Upload your initial work to be done and have it assigned to available members
@@ -83,12 +84,13 @@ title: Open Guilds
     </figure>
 
     <section class="copy">
-      <h1>
+      <h2>
       Get finished work back
-      </h1>
+      </h2>
 
       <p>
-      When the work is completed, we send it back to your service.
+      When the work is completed, we send it back to your service, with a 
+      complete history of who did what.
       </p>
 
       <p>
@@ -103,8 +105,5 @@ title: Open Guilds
     <li><%= link_to 'Docs', 'http://docs.openguilds.com/' %>
     <li><%= link_to 'Sign up', 'https://dashboard.openguilds.com/users/sign_up/' %></li>
     <li><%= link_to 'Sign in', 'https://dashboard.openguilds.com/users/sign_in/' %></li>
-
-    <li><%= link_to 'Facebook', '#' %></li>
-    <li><%= link_to 'Pricing', '#' %></li>
   </ul>
 </footer>

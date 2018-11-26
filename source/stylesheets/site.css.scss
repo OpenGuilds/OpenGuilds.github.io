@@ -10,6 +10,16 @@
   text-decoration: none;
 }
 
+.secondary-button {
+  background-color: white;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 5px;
+  padding: $small-spacing $base-spacing;
+  text-decoration: none;
+}
+
+
 body {
   background-color: $background-color;
   color: $base-font-color;
@@ -79,6 +89,7 @@ section.main {
   max-width: $large-screen;
   margin: 0 auto;
   display: block;
+  padding: 0 $small-spacing;
 }
 
 section.segment {
@@ -103,28 +114,63 @@ section.segment {
     padding: 0 $base-spacing;
     width: 100%;
 
-    h1 {
+    h2 {
       text-align: center;
       margin-top: $small-spacing;
     }
   }
 
-  section.links {
-    margin-bottom: $base-spacing;
+
+  @media screen and (min-width: $large-screen) {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+
+    figure {
+      margin-top: $base-spacing;
+    }
+
+    section.copy {
+      h2 {
+        text-align: left;
+      }
+    }
   }
 }
 
 section#hero {
-  height: 80vh;
+  height: 70vh;
   margin-bottom: 15vh !important;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: $base-spacing 0;
+  margin-bottom: $base-spacing * 2;
+
+  section.links {
+    display: flex;
+    margin-top: $base-spacing;
+    margin-bottom: $base-spacing;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+    a {
+      margin: 0 $small-spacing;
+    }
+  }
 }
 
 
 footer {
   margin-top: $base-spacing * 3;
-  min-height: 25vh;
+  min-height: 40vh;
   background-color: darken($primary-color, 10);
   padding: $base-spacing;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
 
   ul {
     display: flex;
