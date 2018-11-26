@@ -111,8 +111,8 @@ section.segment {
   }
 
   section.copy {
-    padding: 0 $base-spacing;
-    width: 100%;
+    padding: 0 $small-spacing;
+    max-width: 100%;
 
     h2 {
       text-align: center;
