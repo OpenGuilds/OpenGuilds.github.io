@@ -2,6 +2,14 @@
 @import 'typography';
 @import 'forms';
 
+.primary-button {
+  background-color: $primary-color;
+  color: white;
+  border-radius: 5px;
+  padding: $small-spacing $base-spacing;
+  text-decoration: none;
+}
+
 body {
   background-color: $background-color;
   color: $base-font-color;
@@ -12,7 +20,7 @@ body {
   overflow-x: hidden;
 }
 
-a {
+a, strong {
   color: $primary-color;
 }
 
@@ -68,41 +76,73 @@ nav.navigation {
 }
 
 section.main {
-  max-width: 700px;
-  display: block;
+  max-width: $large-screen;
   margin: 0 auto;
+  display: block;
 }
 
-section.header {
-  height: 75vh;
+section.segment {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
   justify-content: center;
-  margin: 0 $small-spacing;
+  align-items: center;
+  margin: $base-spacing 0;
+  margin-bottom: $base-spacing * 2;
 
-  section.signup {
+  figure {
+    max-width: 100%;
+    margin: 0 $base-spacing;
+
+    img {
+      width: 128px;
+      margin: 0 auto;
+    }
+  }
+
+  section.copy {
+    padding: 0 $base-spacing;
     width: 100%;
+
+    h1 {
+      text-align: center;
+      margin-top: $small-spacing;
+    }
+  }
+
+  section.links {
+    margin-bottom: $base-spacing;
   }
 }
 
-section.signup {
-  margin: $base-spacing;
+section#hero {
+  height: 80vh;
+  margin-bottom: 15vh !important;
 }
 
-section.flexible-organizations,
-section.guild-creation,
-section.layers,
-section.work,
-section.rewards,
-section.unscalable,
-section.internet-of-people {
-  margin: 15vh $small-spacing;
-}
 
 footer {
   margin-top: $base-spacing * 3;
-  height: 25vh;
+  min-height: 25vh;
   background-color: darken($primary-color, 10);
-  width: 100%;
+  padding: $base-spacing;
+
+  ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    margin-left: 0;
+    padding-inline-start: 0px;
+
+    li {
+      margin-bottom: $small-spacing;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
 }

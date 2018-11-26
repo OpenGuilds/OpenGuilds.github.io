@@ -11,96 +11,100 @@ title: Open Guilds
 </nav>
 
 <section class="main">
-  <section class="header">
-    <h1>Crowdsource digital tasks to a community you create</h1>
-    <p>
-      OpenGuilds is a platform to build crowdsourced organizations that can 
-      scale to thousands of individuals.
-    </p>
+  <section class="segment" id="hero">
+    <section class="copy">
+      <h1>
+      Create digital on-demand
+      workforces that can do
+      anything
+      </h1>
 
-    <section class="signup">
-      <%= partial 'signup' %>
+      <p>
+      OpenGuilds helps you build and manage online organizations that perform work
+      online for rewards you set.
+      </p>
+    </section>
+
+    <section class="links">
+      <%= link_to 'Sign Up', '#', class: 'primary-button' %>
     </section>
   </section>
 
+  <section class="segment">
+    <figure>
+      <%= image_tag 'community.png' %>
+    </figure>
 
-  <section class="flexible-organizations">
-    <h2>Crowdsource a Workforce of Your Control</h2>
-    <strong>
-      Guilds are created with a transparent constitution of your creation.
-    </strong>
-    <p>
-      Guilds are established with a set of transparent rules, written into a guild's
-      constitution. The constitution outlines how workers are onboarded or promoted,
-      how rewards are distributed, and how the rules themselves can be changed.
-    </p>
+    <section class="copy">
+      <h1>
+      Build a community
+      </h1>
 
+      <p>
+      Guilds have different tasks and levels of responsibility.
+      When you set up your guild, you control the flow of work.
+      </p>
 
-    <strong>
-      Skilled workers join guilds, gain qualifications, and are rewarded for their work.
-    </strong>
-    <p>
-      Guilds are only limited by the number of members they can attract. No more overhead, members are
-      rewarded directly based on the merit of their work done. Guilds can process one
-      task a day, or thousands, the only limit is the guild's total membership.
-    </p>
-  </section>
+      <p>
+      Guilds can even use other platforms such as
+      <strong>Amazon Mechanical Turk</strong> to provide an already
+      existing community of workers you can have do the initial work that can
+      be checked by more trusted members.
+      </p>
 
-  <section class="layers">
-    <h2>Guilds Have Layers</h2>
-    <p>
-    Guilds support advanced workflows by pushing work done through layers. A layer defines
-    how the work in a previous layer should be transformed and output to the next.
-    In this way simple tasks done by different workers can be combined to give accurate
-    results.
-    </p>
-
-    <p>
-    Workers can be promoted automatically through to more trusted layers by completing
-    tasks correctly according to the guild's constitution. Deeper layers are more subjective
-    and can be used to combine or enhance submitted work from previous workers.
-    </p>
-  </section>
-
-  <section class="work">
-    <h2>Open Guilds Work</h2>
-    <p>
-    Imagine a large outer circle and smaller inner circle. Most work done by guilds
-    such as image labelling, are easy and verifiable. They are done as much as possible
-    by the outer circle, consisting of crowdsourced workers from outside your organization.
-    When a subjective or expert opinion is needed, or workers disagree on an answer,
-    the work can be passed to the more trusted inner circle for verification. This is
-    a simple example of how Open Guilds provide quality control.
-    </p>
-  </section>
-
-  <section class="rewards">
-    <h2>Workers Are Rewarded</h2>
-    <p>
-    A guild multiplies its productivity by promoting good workers through its layers
-    for greater rewards and more trusted work. This allows for the scalability that
-    makes crowdsourcing attractive.
-    </p>
-
-    <p>
-    Workers can be members of multiple guilds and gain qualifications for many different
-    kinds of digital work. They are not dependent on a single guild for their livelihood
-    in the same way a guild is not dependent on any single worker.
-    </p>
-  </section>
-
-  <section class="unscalable">
-    <h2>Use Open Guilds to Scale the Unscalable</h2>
-    <p>See how different groups can use OpenGuilds to solve big challenges:</p>
-    <section class="ideas">
-      <%= partial 'ideas' %>
     </section>
   </section>
 
-  <section class="signup">
-    <%= partial 'signup' %>
+  <section class="segment">
+    <figure>
+      <%= image_tag 'send-work.png' %>
+    </figure>
+
+    <section class="copy">
+      <h1>
+      Send work in
+      </h1>
+
+      <p>
+      Upload your initial work to be done and have it assigned to available members
+      of your guild.
+      </p>
+
+      <p>
+      Guilds have an API developers can send data to. You can read more about
+      our documentation <%= link_to 'here', 'http://docs.openguilds.com' %>
+      </p>
+    </section>
+  </section>
+
+  <section class="segment">
+    <figure>
+      <%= image_tag 'get-work.png' %>
+    </figure>
+
+    <section class="copy">
+      <h1>
+      Get finished work back
+      </h1>
+
+      <p>
+      When the work is completed, we send it back to your service.
+      </p>
+
+      <p>
+      Workers are rewarded for completing the tasks correctly.
+      </p>
+    </section>
   </section>
 </section>
 
 <footer>
+  <ul>
+    <li><%= link_to 'Docs', 'http://docs.openguilds.com/' %>
+    <li><%= link_to 'Sign up', 'https://dashboard.openguilds.com/users/sign_up/' %></li>
+    <li><%= link_to 'Sign in', 'https://dashboard.openguilds.com/users/sign_in/' %></li>
+
+    <li><%= link_to 'Facebook', '#' %></li>
+    <li><%= link_to 'Pricing', '#' %></li>
+  </ul>
 </footer>
