@@ -73,7 +73,7 @@ GEM
       servolux
       tilt (~> 2.0)
       uglifier (~> 3.0)
-    middleman-gh-pages (0.3.1)
+    middleman-gh-pages (0.4.1)
       rake (> 0.9.3)
     minitest (5.11.3)
     padrino-helpers (0.13.3.4)
@@ -85,7 +85,7 @@ GEM
     parallel (1.12.1)
     public_suffix (3.0.2)
     rack (2.0.5)
-    rake (12.3.1)
+    rake (12.3.2)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -111,4 +111,4 @@ DEPENDENCIES
   wdm (~> 0.1)
 
 BUNDLED WITH
-   1.16.1
+   1.17.3
