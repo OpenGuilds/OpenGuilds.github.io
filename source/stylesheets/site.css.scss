@@ -2,21 +2,84 @@
 @import 'typography';
 @import 'forms';
 
+li {
+  margin: ($base-spacing / 2) 0;
+  font-size: 1.15em;
+  line-height: 1.5;
+  color: lighten($base-font-color, 10%);
+}
+
+.card {
+  padding: $base-spacing;
+  max-width: $large-screen;
+  border: 1px solid $primary-color;
+  border-color: $primary-color;
+  display: block;
+  margin: $base-spacing auto;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: ($small-spacing / 2) ($small-spacing / 2) 0px lighten($primary-color, 45%);
+
+  @media screen and (min-width: $large-screen) {
+    box-shadow: $small-spacing $small-spacing 0px lighten($primary-color, 45%);
+  }
+}
+
+section.privacy-policy {
+  @extend.card;
+  position: relative;
+
+  .secondary-button {
+    position: absolute;
+    top: $base-spacing;
+    right: $base-spacing;
+  }
+}
+
+section.call-to-action {
+  @extend.card;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 25vh;
+}
+
+section.terms-and-conditions {
+  @extend.card;
+  position: relative;
+
+  .secondary-button {
+    position: absolute;
+    top: $base-spacing;
+    right: $base-spacing;
+  }
+}
+
 .primary-button {
   background-color: $primary-color;
   color: white;
   border-radius: 5px;
   padding: $small-spacing $base-spacing;
   text-decoration: none;
+
+  &:hover {
+    background-color: darken($primary-color, 20%);
+  }
 }
 
 .secondary-button {
   background-color: white;
   color: $primary-color;
   border: 1px solid $primary-color;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: $small-spacing $base-spacing;
   text-decoration: none;
+
+  &:hover {
+    background-color: darken($primary-color, 20%);
+    color: white;
+  }
 }
 
 
@@ -99,20 +162,35 @@ section.segment {
   align-items: center;
   margin: $base-spacing 0;
   margin-bottom: $base-spacing * 2;
+  @extend.card;
+  background-image: linear-gradient(to bottom right, #9378C3, #673AB7);
+  background-color: #4A2A84;
+  padding: 0;
 
   figure {
     max-width: 100%;
-    margin: 0 $base-spacing;
-
-    img {
-      width: 128px;
-      margin: 0 auto;
-    }
+    margin: 7vh $base-spacing;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    height: 100%;
   }
 
+  img {
+    width: 128px;
+    margin: 0 auto;
+  }
+
+
   section.copy {
-    padding: 0 $small-spacing;
+    background-color: white;
     max-width: 100%;
+    height: 100%;
+    padding: $base-spacing;
+    border-top: 1px solid $primary-color;
+    border-left: 0 solid $primary-color;
 
     h2 {
       text-align: center;
@@ -123,7 +201,7 @@ section.segment {
 
   @media screen and (min-width: $large-screen) {
     flex-flow: row nowrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 
     figure {
@@ -131,6 +209,9 @@ section.segment {
     }
 
     section.copy {
+      border-top: 0 solid $primary-color;
+      border-left: 1px solid $primary-color;
+
       h2 {
         text-align: left;
       }
@@ -139,7 +220,6 @@ section.segment {
 }
 
 section#hero {
-  height: 70vh;
   margin-bottom: 15vh !important;
   display: flex;
   flex-flow: column nowrap;
@@ -148,19 +228,29 @@ section#hero {
   margin: $base-spacing 0;
   margin-bottom: $base-spacing * 2;
 
-  section.links {
-    display: flex;
-    margin-top: $base-spacing;
-    margin-bottom: $base-spacing;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around;
+  section.copy {
+    @extend.card;
+  }
 
-    a {
-      margin: 0 $small-spacing;
-    }
+
+  @media screen and (min-width: $large-screen) {
+    height: 70vh;
   }
 }
+
+section.links {
+  display: flex;
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+
+  a {
+    margin: 0 $small-spacing;
+  }
+}
+
 
 
 footer {

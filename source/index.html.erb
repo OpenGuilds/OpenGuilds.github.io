@@ -1,22 +1,14 @@
 ---
 title: Open Guilds
 ---
-<nav class="navigation">
-  <ul>
-    <li class="logo"><%=image_tag "open-guilds-logo.png" %>penGuilds</li>
-    <li><%= link_to 'Docs', 'http://docs.openguilds.com/' %>
-    <li><%= link_to 'Sign up', 'https://dashboard.openguilds.com/users/sign_up/' %></li>
-    <li><%= link_to 'Sign in', 'https://dashboard.openguilds.com/users/sign_in/' %></li>
-  </ul>
-</nav>
+
 
 <section class="main">
   <section id="hero">
     <section class="copy">
       <h1>
       Create digital on-demand
-      workforces that can do
-      anything
+      workforces that transform your data for rewards.
       </h1>
 
       <p>
@@ -27,18 +19,20 @@ title: Open Guilds
 
     <section class="links">
       <%= link_to 'Sign Up', 'https://dashboard.openguilds.com/users/sign_up/', class: 'primary-button' %>
+      <%= link_to 'How does it work?', '#first-segment', class: 'secondary-button' %>
       <%= link_to 'Sign In', 'https://dashboard.openguilds.com/users/sign_in/', class: 'secondary-button' %>
+
     </section>
   </section>
 
-  <section class="segment">
+  <section id="first-segment" class="segment">
     <figure>
       <%= image_tag 'community.png' %>
     </figure>
 
     <section class="copy">
       <h2>
-      Build a community
+      Build or join a community
       </h2>
 
       <p>
@@ -98,12 +92,15 @@ title: Open Guilds
       </p>
     </section>
   </section>
+
+  <section class="call-to-action">
+    <h2>Wanna give it a try?</h2>
+    <p>Its totally free to get started!</p>
+    <section class="links">
+      <%= link_to 'Sign Up', 'https://dashboard.openguilds.com/users/sign_up/', class: 'primary-button' %>
+      <%= link_to 'Sign In', 'https://dashboard.openguilds.com/users/sign_in/', class: 'secondary-button' %>
+    </section>
+  </section>
 </section>
 
-<footer>
-  <ul>
-    <li><%= link_to 'Docs', 'http://docs.openguilds.com/' %>
-    <li><%= link_to 'Sign up', 'https://dashboard.openguilds.com/users/sign_up/' %></li>
-    <li><%= link_to 'Sign in', 'https://dashboard.openguilds.com/users/sign_in/' %></li>
-  </ul>
-</footer>
+
