@@ -62,6 +62,7 @@ section.terms-and-conditions {
   border-radius: 5px;
   padding: $small-spacing $base-spacing;
   text-decoration: none;
+  text-align: center;
 
   &:hover {
     background-color: darken($primary-color, 20%);
@@ -75,6 +76,7 @@ section.terms-and-conditions {
   border-radius: 3px;
   padding: $small-spacing $base-spacing;
   text-decoration: none;
+  text-align: center;
 
   &:hover {
     background-color: darken($primary-color, 20%);
@@ -102,8 +104,7 @@ nav.navigation {
   border-color: $primary-color;
   color: $primary-color;
   display: block;
-  max-height: $navigation-height;
-  padding: $small-spacing;
+  padding: 0;
 
   ul {
     display: flex;
@@ -127,6 +128,7 @@ nav.navigation {
       margin-right: auto;
       font-weight: 500;
       font-size: 2em;
+      color: $primary-color;
 
       img {
         height: 48px;
@@ -234,7 +236,7 @@ section#hero {
 
 
   @media screen and (min-width: $large-screen) {
-    height: 70vh;
+    min-height: 70vh;
   }
 }
 
