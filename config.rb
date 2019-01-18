@@ -1,5 +1,6 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
+activate :dotenv
 set :fonts_dir,  'fonts'
 
 activate :autoprefixer do |prefix|
