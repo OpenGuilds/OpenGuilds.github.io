@@ -69,15 +69,19 @@ section.terms-and-conditions, section.privacy-policy {
 }
 
 .primary-button {
-  background-color: $primary-color;
+  background-color: $secondary-color;
+  background-image: linear-gradient(to bottom right, #39A76B, #069647);
+  border: 1px solid darken($secondary-color, 15%) !important;
   color: white;
-  border-radius: 5px;
+  border-radius: $base-border-radius;
   padding: $small-spacing $base-spacing;
   text-decoration: none;
   text-align: center;
 
   &:hover {
-    background-color: darken($primary-color, 20%);
+    background-color: lighten($secondary-color, 5%);
+    background-image: linear-gradient(to top left, #069647, #09E26B);
+    box-shadow: 3px 3px 0px lighten($primary-color, 45%);
   }
 }
 
@@ -85,7 +89,7 @@ section.terms-and-conditions, section.privacy-policy {
   background-color: white;
   color: $primary-color;
   border: 1px solid $primary-color;
-  border-radius: 3px;
+  border-radius: $base-border-radius;
   padding: $small-spacing $base-spacing;
   text-decoration: none;
   text-align: center;
@@ -93,6 +97,7 @@ section.terms-and-conditions, section.privacy-policy {
   &:hover {
     background-color: darken($primary-color, 20%);
     color: white;
+    box-shadow: 3px 3px 0px lighten($primary-color, 45%);
   }
 }
 
@@ -210,7 +215,7 @@ section.segment {
 
     h2 {
       text-align: center;
-      margin-top: $small-spacing;
+      margin-top: 0;
     }
   }
 
@@ -236,13 +241,11 @@ section.segment {
 }
 
 section#hero {
-  margin-bottom: 0 !important;
+  margin: 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  margin-bottom: $base-spacing * 2;
 
   section.links {
     margin-top: 0;
@@ -268,6 +271,15 @@ section#hero {
 
   @media screen and (min-width: $large-screen) {
     min-height: 70vh;
+    margin-bottom: 10vh;
+
+    section.copy {
+      margin-top: $base-spacing;
+      h1 {
+        margin-top: 0;
+        font-size: 2.75em;
+      }
+    }
   }
 }
 
@@ -306,7 +318,7 @@ section.links {
   @media screen and (min-width: $large-screen) {
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 
     a {
       margin: $small-spacing;
@@ -315,12 +327,18 @@ section.links {
       width: auto;
     }
 
+    a.first {
+      border-radius: $base-border-radius;
+    }
+
     a.middle {
       border-left: $base-border;
+      border-radius: $base-border-radius;
     }
 
     a.last {
       border-left: $base-border;
+      border-radius: $base-border-radius;
     }
   }
 }
